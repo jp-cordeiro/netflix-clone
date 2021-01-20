@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/netflix-clone/static/js/main.6b0a9d9f.chunk.js",
-    "main.js.map": "/netflix-clone/static/js/main.6b0a9d9f.chunk.js.map",
+    "main.js": "/netflix-clone/static/js/main.19e3a9b0.chunk.js",
+    "main.js.map": "/netflix-clone/static/js/main.19e3a9b0.chunk.js.map",
     "runtime-main.js": "/netflix-clone/static/js/runtime-main.58536638.js",
     "runtime-main.js.map": "/netflix-clone/static/js/runtime-main.58536638.js.map",
     "static/js/2.0653e468.chunk.js": "/netflix-clone/static/js/2.0653e468.chunk.js",
@@ -12,6 +12,6 @@
   "entrypoints": [
     "static/js/runtime-main.58536638.js",
     "static/js/2.0653e468.chunk.js",
-    "static/js/main.6b0a9d9f.chunk.js"
+    "static/js/main.19e3a9b0.chunk.js"
   ]
 }
