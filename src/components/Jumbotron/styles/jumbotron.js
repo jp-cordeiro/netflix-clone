@@ -22,12 +22,18 @@ export const Inner = styled.div`
   }
 `;
 
-export const Container = styled.div``;
+export const Container = styled.div`
+  @media (max-width: 1000px) {
+    ${Item}:last-of-type h2 {
+      margin-bottom: 50px;
+    }
+  }
+`;
 
 export const Pane = styled.div`
   width: 50%;
 
-  @medi (max-width: 1000px) {
+  @media (max-width: 1000px) {
     width: 100%;
     padding: 0 45px;
     text-align: center;
