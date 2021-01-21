@@ -1,5 +1,5 @@
 import styled from 'styled-components/macro';
-//Container, Row, Column, Link, Title, Text
+
 export const Container = styled.div`
   display: flex;
   padding: 70px 56px;
