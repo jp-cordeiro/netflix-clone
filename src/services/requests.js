@@ -1,19 +1,15 @@
-const API_KEY = process.env.API_TMDB_KEY;
+const API_KEY = process.env.REACT_APP_API_TMDB_KEY;
 const addLanguage = '&language=pt-BR';
 
-let requestPack = {
-  fetchTrendings: `/trending/all/week?api_key=${API_KEY}`,
-  fetchNetflixOriginals: `/discover/tv?api_key=${API_KEY}&with_networks=213`,
-  fetchTopRated: `/movie/top_rated?api_key=${API_KEY}`,
-  fecthActionMovies: `/discover/movie?api_key=${API_KEY}&with_genres=28`,
-  fecthComedyMovies: `/discover/movie?api_key=${API_KEY}with_genres=35`,
-  fetchHorrorMovies: `/discover/movie?api_key=${API_KEY}with_genres=27`,
-  fetchRomanceMovies: `/discover/movie?api_key=${API_KEY}with_genres=10749`,
-  fetchDocumentaries: `/discover/movie?api_key=${API_KEY}&with_genres=99`,
+let requests = {
+  fetchTrendings: `/trending/all/week?api_key=${API_KEY}${addLanguage}`,
+  fetchNetflixOriginals: `/discover/tv?api_key=${API_KEY}&with_networks=213${addLanguage}`,
+  fetchTopRated: `/movie/top_rated?api_key=${API_KEY}${addLanguage}`,
+  fecthActionMovies: `/discover/movie?api_key=${API_KEY}&with_genres=28${addLanguage}`,
+  fecthComedyMovies: `/discover/movie?api_key=${API_KEY}with_genres=35${addLanguage}`,
+  fetchHorrorMovies: `/discover/movie?api_key=${API_KEY}with_genres=27${addLanguage}`,
+  fetchRomanceMovies: `/discover/movie?api_key=${API_KEY}with_genres=10749${addLanguage}`,
+  fetchDocumentaries: `/discover/movie?api_key=${API_KEY}&with_genres=99${addLanguage}`,
 };
-
-const requests = Object.keys(requestPack).map((request) => {
-  return (request += addLanguage);
-});
 
 export default requests;
